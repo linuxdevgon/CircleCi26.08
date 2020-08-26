@@ -24,7 +24,7 @@
               command: docker push $IMAGE_NAME:latest
     workflows:
       version: 2
-      build:
+      build-master:
         jobs:
           - build:
               filters:
