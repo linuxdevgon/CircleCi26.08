@@ -24,10 +24,10 @@
               command: docker push $IMAGE_NAME:latest
     workflows:
       version: 2
-        build-master:
-          jobs:
-            - build:
-                filters:
-                  branches:
-                    only: master
+      build:
+        jobs:
+          - build:
+              filters:
+                branches:
+                  only: master
 
